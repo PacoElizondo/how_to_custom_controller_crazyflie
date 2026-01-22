@@ -61,7 +61,7 @@ No need to edit Kbuild or other files
 I would recommend this one as it has a more comprehensive structure, since everything should be in the same file, contrary to the in-built controllers provided by bit-craze. 
 
 The following controller would work as such and it will be explained further below:
-https://github.com/PacoElizondo/crazyflie-state-restricted-control/blob/adaptive_control/my_controller.c
+[4. Controller code structure](#4-controller-code-structure)
 
 #### 2.2 Test
 Build:
@@ -90,8 +90,7 @@ def set_controller(scf):
 ```
 
 If you would like an example python API code that shows how to set up the drone and access to your custom logs (to see control state/inputs) see:
-https://github.com/PacoElizondo/crazyflie-state-restricted-control/blob/adaptive_control/follow_waypoints.py
-
+[example_API_rutine.py](example_API_rutine.py)
 
 ## 4. Controller code structure
 
@@ -210,7 +209,7 @@ LOG_GROUP_STOP(adaptive_control)
 
 ```
 
-This is a simplification of https://github.com/PacoElizondo/crazyflie-state-restricted-control/blob/adaptive_control/my_controller.c
+This is a simplification of [controller_example.c](controller_example.c)
 
 ## bitcraze Resources
 
